@@ -40,3 +40,50 @@ export const skillText = [
     desc: "정직은 다른 사람보다 나에게 큰 의미를 부여해야 한다. 자신이 정직하지 않으면 진정으로 원하는 일을 열정적으로 밀고 나갈 수 없다. 마음에서 우러나오는 일을 해야 정직해지며 삶을 더 즐길 줄 알게 된다.",
   },
 ];
+
+export const siteText = [
+  {
+    text: ["make", "site compliant with", "webstandard"],
+    title: "비트를 이용한 사이트 제작",
+    code: "https://github.com/webstoryboy/port2023-vite",
+    view: "https://port2023-vite.netlify.app",
+    info: [
+      "site coding",
+      "production period : two days",
+      "use stack : HTML5/CSS3, CSS Variable, Vite",
+    ],
+  },
+  {
+    text: ["make", "site compliant with", "react.js"],
+    title: "리액트를 이용한 사이트 제작",
+    code: "https://github.com/webstoryboy/port2023-react",
+    view: "https://port2023-react.netlify.app",
+    info: [
+      "site coding",
+      "production period : two days",
+      "use stack : HTML5/CSS3, CSS Variable, Vite",
+    ],
+  },
+  {
+    text: ["make", "site compliant with", "vue.js"],
+    title: "뷰를 이용한 사이트 제작",
+    code: "https://github.com/webstoryboy/port2023-vue",
+    view: "https://port2023-vue.netlify.app",
+    info: [
+      "site coding",
+      "production period : two days",
+      "use stack : HTML5/CSS3, Scss Variable, vue",
+    ],
+  },
+  {
+    text: ["make", "site compliant with", "next.js"],
+    title: "넥스트를 이용한 사이트 제작",
+    code: "https://github.com/webstoryboy/port2023-next",
+    view: "https://port2023-next.netlify.app",
+    info: [
+      "site coding",
+      "production period : two days",
+      "use stack : HTML5/CSS3, Scss Variable, next.js",
+    ],
+  },
+];

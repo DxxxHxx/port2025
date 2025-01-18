@@ -1,8 +1,16 @@
-import { useState } from "react";
+import { useState, MouseEvent } from "react";
 import { headerNav } from "../constants";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+
+  const handleButtonClick = (e: MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    const id = e.currentTarget.textContent?.toLowerCase();
+
+    const $target = document.getElementById(id!);
+    $target?.scrollIntoView({ behavior: "smooth", inline: "start" });
+  };
 
   return (
     <header id="header" role="banner">
@@ -20,7 +28,9 @@ export default function Header() {
           <ul>
             {headerNav.map((item) => (
               <li key={item.url}>
-                <a href={item.url}>{item.title}</a>
+                <a onClick={handleButtonClick} href={item.url}>
+                  {item.title}
+                </a>
               </li>
             ))}
           </ul>
