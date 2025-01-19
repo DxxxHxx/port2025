@@ -9,7 +9,7 @@ export default function Skill() {
         </h2>
         <div className="skill__desc">
           {skillText.map((item, index) => (
-            <div>
+            <div key={index}>
               <span>{index + 1}.</span>
               <h3>{item.title}</h3>
               <p>{item.desc}</p>

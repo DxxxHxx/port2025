@@ -17,12 +17,16 @@ export default function Site() {
                 ))}
               </div>
               <h3 className="title">{item.title}</h3>
+
               <div className="btn">
-                <a href="https://github.com/webstoryboy/port2023-vite">
-                  {item.code}
+                <a target="_blank" rel="noopener noreferrer" href={item.code}>
+                  code
                 </a>
-                <a href="https://port2023-vite.netlify.app/">{item.view}</a>
+                <a target="_blank" rel="noopener noreferrer" href={item.view}>
+                  view
+                </a>
               </div>
+
               <div className="info">
                 {item.info.map((i) => (
                   <span key={i}>{i}</span>
