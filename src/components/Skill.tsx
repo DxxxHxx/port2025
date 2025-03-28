@@ -1,4 +1,4 @@
-import { skillText } from "../constants";
+import { skillText } from "../constants/skillConstant";
 
 export default function Skill() {
   return (

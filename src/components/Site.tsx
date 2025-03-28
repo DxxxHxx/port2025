@@ -1,4 +1,4 @@
-import { siteText } from "../constants";
+import { siteText } from "../constants/siteConstant";
 
 export default function Site() {
   return (
