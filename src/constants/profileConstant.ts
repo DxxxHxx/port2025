@@ -5,6 +5,12 @@ export const profileText = {
   github: "https://github.com/DxxxHxx/",
   phone: "010-8339-5650",
   education: "계명대학교 컴퓨터공학과 (4학년 1학기 수료, 휴학 중)",
+  contact: [
+    { email: "donghun1163@gmail.com" },
+    { github: "https://github.com/DxxxHxx/" },
+    { phone: "010-8339-5650" },
+    { education: "계명대학교 컴퓨터공학과 (4학년 1학기 수료, 휴학 중)" },
+  ],
   about: `[사용자 경험을 중요시 하는 개발자]
 
 저는 프론트엔드 개발, 배포, 운영 경험을 보유한 신입 개발자 이동훈입니다.

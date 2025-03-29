@@ -1,9 +1,9 @@
 export const headerNav = [
   {
-    title: "intro",
+    title: "home",
     id: 1,
   },
-  { title: "Profile", id: 2 },
+  { title: "about", id: 2 },
   {
     title: "skill",
     id: 3,

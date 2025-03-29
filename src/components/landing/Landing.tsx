@@ -8,7 +8,7 @@ const variant = {
   whileInview: {
     opacity: 1,
     y: 0,
-    transition: { duration: 1.2 },
+    transition: { duration: 0.8 },
   },
 };
 const Landing = () => {

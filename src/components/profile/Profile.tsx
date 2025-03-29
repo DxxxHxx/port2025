@@ -1,91 +1,99 @@
-import { BookOpenIcon, GithubIcon, MailIcon, PhoneIcon } from "lucide-react";
-import { ReactNode } from "react";
+import React from "react";
+import { GithubIcon, MailIcon, PhoneIcon, BookOpenIcon } from "lucide-react";
 import { profileText } from "../../constants/profileConstant";
+import { motion } from "framer-motion";
 
+const varinat = {
+  initial: {
+    y: 50,
+    opacity: 0,
+  },
+  inView: {
+    y: 0,
+    opacity: 1,
+    transition: { duration: 0.8 },
+  },
+};
 export default function Profile() {
   return (
-    <section
-      id="profile"
-      // className="bg-white rounded-xl shadow-lg overflow-hidden"
-    >
-      <h2 className="profile__title">
+    <section id="about" className="profile-section">
+      <h2 className="profile-heading">
         About Me <em>저는 이런 사람이에요!</em>
       </h2>
-      <div className="profile__inner">
-        {/* Profile Image Column */}
-        <div className="profile__wrapper ">
-          <img className="profile__img" src="#" alt="profile image" />
-
-          <h1 className="profile__name">{profileText.name}</h1>
-          <p className="profile__dev">{profileText.title}</p>
-          <div className="profile__contact__wrapper">
+      <motion.div
+        variants={varinat}
+        initial="initial"
+        whileInView="inView"
+        className="profile-container"
+      >
+        {/* Header Section */}
+        <motion.div
+          variants={varinat}
+          transition={{ delay: 0.3 }}
+          className="profile-header"
+        >
+          <h1 className="profile-name">{profileText.name}</h1>
+          <p className="profile-title">{profileText.title}</p>
+        </motion.div>
+        {/* Contact Information */}
+        <motion.div
+          variants={varinat}
+          transition={{ delay: 0.6 }}
+          className="contact-grid"
+        >
+          <ContactItem
+            icon={<MailIcon size={20} />}
+            text={profileText.email}
+            label="이메일"
+          />
+          <a href={profileText.github} target="_blank">
             <ContactItem
-              icon={<MailIcon size={18} />}
-              text={profileText.email}
+              icon={<GithubIcon size={20} />}
+              text={"바로가기"}
+              label="깃허브"
             />
-            <a
-              href={profileText.github}
-              target="_blank"
-              style={{ padding: 0, display: "inline-block" }}
-            >
-              <ContactItem icon={<GithubIcon size={18} />} text={"바로가기"} />
-            </a>
-            <ContactItem
-              icon={<PhoneIcon size={18} />}
-              text={profileText.phone}
-            />
-            <ContactItem
-              icon={<BookOpenIcon size={18} />}
-              text={profileText.education}
-            />
-          </div>
-        </div>
-        {/* About Column */}
-        <About />
-      </div>
+          </a>
+          <ContactItem
+            icon={<PhoneIcon size={20} />}
+            text={profileText.phone}
+            label="연락처"
+          />
+          <ContactItem
+            icon={<BookOpenIcon size={20} />}
+            text={profileText.education}
+            label="학력"
+          />
+        </motion.div>
+        {/* About Section */}
+        <motion.div
+          variants={varinat}
+          transition={{ delay: 0.9 }}
+          className="about-section"
+        >
+          <h2 className="section-title">자기소개</h2>
+          <p className="about-text">{profileText.about}</p>
+        </motion.div>
+        {/* Skills Section */}
+      </motion.div>
     </section>
   );
 }
-
-const About = () => {
+function ContactItem({
+  icon,
+  text,
+  label,
+}: {
+  icon: React.ReactNode;
+  text: string;
+  label: string;
+}) {
   return (
-    <div className="profile__about">
-      <div className="profile__intro">
-        <h2>자기소개</h2>
-        <div></div>
-        <p>{profileText.about}</p>
-      </div>
-      <div className="mt-8">
-        <h2 className="text-2xl font-bold text-gray-800 mb-2">기술 스택</h2>
-        <div className="w-20 h-1 bg-blue-500 mb-4"></div>
-        <div className="flex flex-wrap gap-2">
-          {[
-            "React",
-            "TypeScript",
-            "JavaScript",
-            "HTML5",
-            "CSS3",
-            "Tailwind CSS",
-            "Git",
-          ].map((skill) => (
-            <span
-              key={skill}
-              className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm"
-            >
-              {skill}
-            </span>
-          ))}
-        </div>
+    <div className="contact-item">
+      <div className="contact-icon">{icon}</div>
+      <div className="contact-info">
+        <p className="contact-label">{label}</p>
+        <p className="contact-text">{text}</p>
       </div>
     </div>
   );
-};
-
-const ContactItem = ({ icon, text }: { icon: ReactNode; text: string }) => {
-  return (
-    <div className="profile__contact__item">
-      <div>{icon}</div>
-      <span>{text}</span>
-    </div>
-  );
-};
+}
