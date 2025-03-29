@@ -5,7 +5,7 @@ export default function Skill() {
     <section id="skill">
       <div className="skill__inner">
         <h2 className="skill__title">
-          Challenge <em>나의 도전</em>
+          My Skill <em>기술 스택</em>
         </h2>
         <div className="skill__desc">
           {skillText.map((item, index) => (
