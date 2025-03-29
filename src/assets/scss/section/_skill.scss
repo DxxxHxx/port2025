@@ -2,6 +2,7 @@
     padding: 16px;
     display: flex;
     justify-content: space-between;
+    overflow: clip;
 
     @media (max-width: 800px){
         flex-direction: column;
