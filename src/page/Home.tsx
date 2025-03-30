@@ -1,6 +1,6 @@
 import Main from "../components/Main";
 import Skill from "../components/Skill";
-import Site from "../components/Site";
+import SiteContainer from "../components/Site";
 import Port from "../components/Port";
 import ContactContainer from "../components/contact/ContactContainer";
 import Profile from "../components/profile/Profile";
@@ -12,7 +12,8 @@ export default function Home() {
       <Landing />
       <Profile />
       <Skill />
-      <Site />
+      {/* <Site /> */}
+      <SiteContainer />
       <Port />
       <ContactContainer />
     </Main>
