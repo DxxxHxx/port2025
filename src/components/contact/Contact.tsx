@@ -9,7 +9,7 @@ const variants = {
   inView: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.7, staggerChildren: 0.1 },
+    transition: { duration: 0.7 },
   },
 };
 export default function Contact({
@@ -39,7 +39,7 @@ export default function Contact({
           onSubmit={handleSubmit}
           className="form"
         >
-          <motion.div variants={variants} className="mb-6 form__label_input">
+          <div className="mb-6 form__label_input">
             <label
               htmlFor="name"
               className="block text-gray-700 font-medium mb-2"
@@ -55,8 +55,8 @@ export default function Contact({
               placeholder="이름"
               required
             />
-          </motion.div>
-          <motion.div variants={variants} className="mb-6 form__label_input">
+          </div>
+          <div className="mb-6 form__label_input">
             <label
               htmlFor="title"
               className="block text-gray-700 font-medium mb-2"
@@ -72,8 +72,8 @@ export default function Contact({
               placeholder="제목"
               required
             />
-          </motion.div>
-          <motion.div variants={variants} className="mb-6 form__label_input">
+          </div>
+          <div className="mb-6 form__label_input">
             <label
               htmlFor="email"
               className="block text-gray-700 font-medium mb-2"
@@ -89,8 +89,8 @@ export default function Contact({
               placeholder="이메일"
               required
             />
-          </motion.div>
-          <motion.div variants={variants} className="mb-6 form__label_input">
+          </div>
+          <div className="mb-6 form__label_input">
             <label
               htmlFor="content"
               className="block text-gray-700 font-medium mb-2"
@@ -107,14 +107,13 @@ export default function Contact({
               placeholder="내용을 작성해주세요."
               required
             />
-          </motion.div>
-          <motion.button
-            variants={variants}
+          </div>
+          <button
             style={{ backgroundColor: loading ? "gray" : "" }}
             type="submit"
           >
             {loading ? "전송 중 . . ." : "메시지 보내기"}
-          </motion.button>
+          </button>
         </motion.form>
 
         <hr className="divide"></hr>

@@ -11,7 +11,7 @@ const varinat = {
   inView: {
     y: 0,
     opacity: 1,
-    transition: { duration: 0.8 },
+    transition: { duration: 0.8, staggerChildren: 0.1 },
   },
 };
 export default function Profile() {
@@ -27,20 +27,12 @@ export default function Profile() {
         className="profile-container"
       >
         {/* Header Section */}
-        <motion.div
-          variants={varinat}
-          transition={{ delay: 0.3 }}
-          className="profile-header"
-        >
+        <motion.div variants={varinat} className="profile-header">
           <h1 className="profile-name">{profileText.name}</h1>
           <p className="profile-title">{profileText.title}</p>
         </motion.div>
         {/* Contact Information */}
-        <motion.div
-          variants={varinat}
-          transition={{ delay: 0.6 }}
-          className="contact-grid"
-        >
+        <motion.div variants={varinat} className="contact-grid">
           <ContactItem
             icon={<MailIcon size={20} />}
             text={profileText.email}
@@ -65,11 +57,7 @@ export default function Profile() {
           />
         </motion.div>
         {/* About Section */}
-        <motion.div
-          variants={varinat}
-          transition={{ delay: 0.9 }}
-          className="about-section"
-        >
+        <motion.div variants={varinat} className="about-section">
           <h2 className="section-title">자기소개</h2>
           <div
             dangerouslySetInnerHTML={{ __html: profileText.about }}
