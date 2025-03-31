@@ -1,4 +1,4 @@
-import { FormEvent } from "react";
+import { FormEvent, RefObject } from "react";
 import { FormInputTypes } from "./type";
 
 export interface UseInputState {
@@ -13,4 +13,6 @@ export interface ContactProps {
   email: UseInputState;
   title: UseInputState;
   content: UseInputState;
+  formRef: RefObject<HTMLFormElement>;
+  loading: boolean;
 }

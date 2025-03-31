@@ -1,11 +1,25 @@
 import { ContactProps } from "../../types/interface";
+import { motion } from "framer-motion";
 
+const variants = {
+  init: {
+    opacity: 0,
+    y: 50,
+  },
+  inView: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.7, staggerChildren: 0.1 },
+  },
+};
 export default function Contact({
   handleSubmit,
   content,
   email,
   name,
   title,
+  formRef,
+  loading,
 }: ContactProps) {
   return (
     <section
@@ -14,10 +28,18 @@ export default function Contact({
     >
       <div className="max-w-3xl mx-auto">
         <h2 className="contact__title text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-          Contact Me <em>test</em>
+          Contact <em>읽어주셔서 감사합니다 !</em>
         </h2>
-        <form onSubmit={handleSubmit} className="form">
-          <div className="mb-6 form__label_input">
+        <motion.form
+          variants={variants}
+          initial="init"
+          whileInView="inView"
+          viewport={{ margin: "100px" }}
+          ref={formRef}
+          onSubmit={handleSubmit}
+          className="form"
+        >
+          <motion.div variants={variants} className="mb-6 form__label_input">
             <label
               htmlFor="name"
               className="block text-gray-700 font-medium mb-2"
@@ -30,10 +52,11 @@ export default function Contact({
               name="name"
               value={name.value}
               onChange={name.handleChange}
-              placeholder="홍길동"
+              placeholder="이름"
+              required
             />
-          </div>
-          <div className="mb-6 form__label_input">
+          </motion.div>
+          <motion.div variants={variants} className="mb-6 form__label_input">
             <label
               htmlFor="title"
               className="block text-gray-700 font-medium mb-2"
@@ -47,9 +70,10 @@ export default function Contact({
               value={title.value}
               onChange={title.handleChange}
               placeholder="제목"
+              required
             />
-          </div>
-          <div className="mb-6 form__label_input">
+          </motion.div>
+          <motion.div variants={variants} className="mb-6 form__label_input">
             <label
               htmlFor="email"
               className="block text-gray-700 font-medium mb-2"
@@ -62,10 +86,11 @@ export default function Contact({
               name="email"
               value={email.value}
               onChange={email.handleChange}
-              placeholder="your.email@example.com"
+              placeholder="이메일"
+              required
             />
-          </div>
-          <div className="mb-6 form__label_input">
+          </motion.div>
+          <motion.div variants={variants} className="mb-6 form__label_input">
             <label
               htmlFor="content"
               className="block text-gray-700 font-medium mb-2"
@@ -74,16 +99,23 @@ export default function Contact({
             </label>
             <textarea
               id="content"
-              name="content"
+              name="message"
               value={content.value}
               style={{ resize: "none" }}
               onChange={content.handleChange}
               rows={10}
-              placeholder="문의 내용을 작성해주세요..."
+              placeholder="내용을 작성해주세요."
+              required
             />
-          </div>
-          <button type="submit">메시지 보내기</button>
-        </form>
+          </motion.div>
+          <motion.button
+            variants={variants}
+            style={{ backgroundColor: loading ? "gray" : "" }}
+            type="submit"
+          >
+            {loading ? "전송 중 . . ." : "메시지 보내기"}
+          </motion.button>
+        </motion.form>
 
         <hr className="divide"></hr>
         <div className="contact__info mt-10 text-center">
