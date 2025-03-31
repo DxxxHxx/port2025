@@ -1,7 +1,8 @@
-import { skillText } from "../constants/skillConstant";
+import { skillList } from "../constants/skillConstant";
 import { motion } from "framer-motion";
 
 export default function Skill() {
+  const isSmallScreen = window.matchMedia("(max-width: 1024px)").matches;
   return (
     <section id="skill">
       <div className="skill__inner">
@@ -9,7 +10,7 @@ export default function Skill() {
           My Skill <em>기술 스택</em>
         </h2>
         <div className="skill__desc">
-          {skillText.map((item, index) => (
+          {skillList.map((item, index) => (
             <motion.div
               variants={{
                 init: {
@@ -22,14 +23,18 @@ export default function Skill() {
                   transition: { duration: 0.5 },
                 },
               }}
-              initial="init"
-              whileInView="inView"
+              initial={isSmallScreen ? "" : "init"}
+              whileInView={isSmallScreen ? "" : "inView"}
               viewport={{ margin: "200px 0px 0px 0px", amount: 0.8 }}
               key={index}
             >
-              <span>{index + 1}.</span>
+              <span>{item.id}.</span>
               <h3>{item.title}</h3>
-              <p>{item.desc}</p>
+              <ul>
+                {item.descList.map(({ desc, id }) => (
+                  <li key={id}>{desc}</li>
+                ))}
+              </ul>
             </motion.div>
           ))}
         </div>

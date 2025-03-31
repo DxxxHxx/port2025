@@ -16,3 +16,9 @@ export interface ContactProps {
   formRef: RefObject<HTMLFormElement>;
   loading: boolean;
 }
+
+export interface SkillListState {
+  id: number;
+  title: string;
+  descList: { id: number; desc: string }[];
+}
