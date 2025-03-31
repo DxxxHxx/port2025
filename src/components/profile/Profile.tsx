@@ -71,7 +71,10 @@ export default function Profile() {
           className="about-section"
         >
           <h2 className="section-title">자기소개</h2>
-          <p className="about-text">{profileText.about}</p>
+          <div
+            dangerouslySetInnerHTML={{ __html: profileText.about }}
+            className="about-text"
+          />
         </motion.div>
         {/* Skills Section */}
       </motion.div>
