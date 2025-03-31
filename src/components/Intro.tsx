@@ -1,4 +1,4 @@
-import { introText } from "../constants";
+import { introText } from "../constants/introConstant";
 
 export default function Intro() {
   return (

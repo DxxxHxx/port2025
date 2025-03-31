@@ -1,0 +1,102 @@
+.profile-section {
+  margin: 0 16px;
+  }
+  .profile-heading {
+    // position: absolute;
+    margin-bottom: 40px;
+    // top: 70px;
+    // left: 0;
+    width: 48%;
+    height: 5vw;
+    font-size: 4vw;
+    font-weight: 900;
+    line-height: 1.6;
+    font-family: var(--mainKor-font);
+    text-transform: uppercase;
+    color: var(--black100);
+    border-bottom: 0.4vw solid var(--black100);
+
+    em{
+        font-size: 1.25rem;
+        font-weight: 400;
+        line-height: 2;
+    }
+
+    @media (max-width: 800px){
+        width: 100%;
+        margin-bottom: 10vw;
+        font-size: 30px;
+        height: auto;
+        top: 68px;
+        background-color: var(--mainBg-color);
+    }
+
+}
+  .profile-container {
+    padding: 2rem;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  .profile-header {
+    border-bottom: 1px solid #f3f4f6;
+    padding-bottom: 2rem;
+  }
+  .profile-name {
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: #1f2937;
+  }
+  .profile-title {
+    font-size: 1.25rem;
+    color: #2563eb;
+    margin-top: 0.5rem;
+  }
+  .contact-grid {
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  @media (min-width: 768px) {
+    .contact-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #f9fafb;
+    transition: background-color 0.2s ease;
+  }
+  .contact-item:hover {
+    background-color: #f3f4f6;
+  }
+  .contact-icon {
+    color: #2563eb;
+  }
+  .contact-label {
+    font-size: 0.875rem;
+    color: #6b7280;
+  }
+  .contact-text {
+    color: #374151;
+  }
+  .about-section, .skills-section {
+    padding-top: 2rem;
+    border-top: 1px solid #f3f4f6;
+  }
+  .section-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1f2937;
+    margin-bottom: 1rem;
+  }
+  .about-text {
+    color: #4b5563;
+    line-height: 1.7;
+  }

@@ -1,26 +1,18 @@
-import Contact from "../components/Contact";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
-import Intro from "../components/Intro";
 import Main from "../components/Main";
-import Port from "../components/Port";
-import Site from "../components/Site";
 import Skill from "../components/Skill";
-import Skip from "../components/Skip";
+import ContactContainer from "../components/contact/ContactContainer";
+import Profile from "../components/profile/Profile";
+import Landing from "../components/landing/Landing";
+import ImproveListContainer from "../components/improve/list/ImproveListContainer";
 
 export default function Home() {
   return (
-    <>
-      <Skip />
-      <Header />
-      <Main>
-        <Intro />
-        <Skill />
-        <Site />
-        <Port />
-        <Contact />
-      </Main>
-      <Footer />
-    </>
+    <Main>
+      <Landing />
+      <Profile />
+      <Skill />
+      <ImproveListContainer />
+      <ContactContainer />
+    </Main>
   );
 }

@@ -1,5 +1,6 @@
 import { useState, MouseEvent } from "react";
-import { headerNav } from "../constants";
+import { headerNav } from "../constants/headerConstant";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,9 +17,9 @@ export default function Header() {
     <header id="header" role="banner">
       <div className="header__inner">
         <div className="header__logo">
-          <a href="/">
+          <Link to={"/"}>
             portfolio<em>donghun</em>
-          </a>
+          </Link>
         </div>
         <nav
           className={`header__nav ${isOpen ? "show" : ""}`}
@@ -27,8 +28,8 @@ export default function Header() {
         >
           <ul>
             {headerNav.map((item) => (
-              <li key={item.url}>
-                <a onClick={handleButtonClick} href={item.url}>
+              <li key={item.id}>
+                <a onClick={handleButtonClick} href={`/#${item.title}`}>
                   {item.title}
                 </a>
               </li>
