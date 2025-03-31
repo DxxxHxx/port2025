@@ -12,7 +12,7 @@ export const profileText = {
     { education: "계명대학교 컴퓨터공학과 (4학년 1학기 수료, 휴학 중)" },
   ],
   about: `
-  [사용자 경험을 중요시 하는 개발자]
+  [ 사용자 경험을 중요시 하는 개발자 ]
 <div style="margin:10px" ></div>
 저는 프론트엔드 개발, 배포, 운영 경험을 보유한 신입 개발자 이동훈입니다.
 기획자, 디자이너, 마케터, 백엔드 개발자와의 협업 경험, 서비스 운영을 통해 확보한 유저 데이터를 기반으로 개선 경험을 보유하고 있습니다.
@@ -21,7 +21,7 @@ iOS Safari, Chrome에서의 크로스브라우징 이슈를 해결하여 다양�
 
 <div style="margin:20px" ></div>
 
-[ 신뢰할 수 있는 코드와 자동화된 테스트 
+[ 신뢰할 수 있는 코드와 자동화된 테스트 ] 
 <div style="margin:10px" ></div>
 코드의 안정성과 유지보수성을 중요하게 생각합니다. 
 Jest와 React Testing Library를 활용한 기본적인 <span style="color:blue">단위 테스트 및 통합 테스트를 경험</span>했으며, 이를 통해 <span style="color:blue">배포 후 발견되는 버그가 40% 감소</span>하는 성과를 얻었습니다. 
