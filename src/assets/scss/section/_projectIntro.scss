@@ -1,0 +1,220 @@
+.project_intro{
+    padding: 16px;
+}
+.project_intro__title {
+    // position: absolute;
+    margin-bottom: 40px;
+    // top: 70px;
+    // left: 0;
+    width: 48%;
+    height: 5vw;
+    font-size: 4vw;
+    font-weight: 900;
+    line-height: 1.6;
+    font-family: var(--mainKor-font);
+    text-transform: uppercase;
+    color: var(--black100);
+    border-bottom: 0.4vw solid var(--black100);
+
+    em{
+        font-size: 1.25rem;
+        font-weight: 400;
+        line-height: 2;
+    }
+
+    @media (max-width: 800px){
+        width: 100%;
+        margin-bottom: 10vw;
+        font-size: 30px;
+        height: auto;
+        top: 68px;
+        background-color: var(--mainBg-color);
+    }
+
+}
+/* Existing base styles remain the same */
+.project-header {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    margin-bottom: 40px;
+  }
+  .project-overview {
+    padding: 40px;
+  }
+  .project-meta {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+    margin: 24px 0;
+  }
+  .meta-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .meta-label {
+    font-size: 0.9rem;
+    color: #666;
+    font-weight: 500;
+  }
+  .meta-value {
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: 600;
+  }
+  .project-section {
+    background: white;
+    border-radius: 16px;
+    padding: 40px;
+    margin-bottom: 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  }
+  .section-subtitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 24px;
+    position: relative;
+    display: inline-block;
+  }
+  .section-subtitle::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 40px;
+    height: 3px;
+    background: #4361ee;
+    border-radius: 2px;
+  }
+  .content-block {
+    color: #444;
+    line-height: 1.8;
+  }
+  .feature-list {
+    margin-top: 16px;
+    padding-left: 20px;
+  }
+  .feature-list li {
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 16px;
+  }
+  .feature-list li::before {
+    content: "•";
+    color: #4361ee;
+    position: absolute;
+    left: -4px;
+  }
+  .tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 32px;
+  }
+  .tech-item {
+    background: #f8f9ff;
+    padding: 24px;
+    border-radius: 12px;
+  }
+  .tech-item h5 {
+    font-size: 1.2rem;
+    margin-bottom: 16px;
+    color: #333;
+  }
+  .tech-item ul {
+    list-style: none;
+  }
+  .tech-item li {
+    margin-bottom: 16px;
+  }
+  .tech-name {
+    display: block;
+    font-weight: 600;
+    color: #4361ee;
+    margin-bottom: 4px;
+  }
+  .architecture-diagram {
+    margin: 20px 0;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  .architecture-diagram img {
+    width: 100%;
+    height: auto;
+  }
+  .contribution-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+  }
+  .contribution-item {
+    background: #f8f9ff;
+    padding: 24px;
+    border-radius: 12px;
+    transition: transform 0.2s ease;
+  }
+  .contribution-item:hover {
+    transform: translateY(-4px);
+  }
+  .contribution-item h5 {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    color: #333;
+  }
+  .achievement {
+    margin-top: 16px;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+  }
+  .achievement-number {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #4361ee;
+  }
+  .achievement-label {
+    color: #666;
+    font-size: 0.9rem;
+  }
+  .review-item {
+    margin-bottom: 24px;
+  }
+  .review-item h5 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    color: #333;
+  }
+  .reference-list {
+    list-style: none;
+  }
+  .reference-list li {
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #eee;
+  }
+  .reference-list li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  .reference-name {
+    display: block;
+    font-weight: 600;
+    color: #4361ee;
+    margin-bottom: 4px;
+  }
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .project-section {
+      padding: 24px;
+    }
+    .tech-grid,
+    .contribution-list {
+      grid-template-columns: 1fr;
+    }
+    .project-meta {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+  }
