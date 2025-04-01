@@ -11,7 +11,7 @@ export const improveList = [
     pos: "",
   },
   {
-    id: 1,
+    id: 2,
     title: "Optimistic update",
     url: optimisticUpdateThumbnail,
     pos: "",

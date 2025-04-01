@@ -9,11 +9,11 @@ export const headerNav = [
     id: 3,
   },
   {
-    title: "site",
+    title: "Project",
     id: 4,
   },
   {
-    title: "portfolio",
+    title: "improve",
     id: 5,
   },
   {

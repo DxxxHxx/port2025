@@ -11,7 +11,7 @@ import { CardState } from "../../types/interface";
 
 const ImproveCarousel = () => {
   return (
-    <div style={{ padding: "16px" }}>
+    <div style={{ padding: "16px" }} id="improve">
       <h2 className="improve__title">
         Improve <em>개선</em>
       </h2>

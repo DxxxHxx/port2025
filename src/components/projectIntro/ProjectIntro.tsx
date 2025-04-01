@@ -1,7 +1,7 @@
 import projectThumbnail from "../../assets/imgs/project-intro/this-money-thumbnail.png";
 export default function ProjectIntro() {
   return (
-    <section className="project_intro">
+    <section className="project_intro" id="project">
       <div>
         <h2 className="project_intro__title">
           Project <em>프로젝트 소개</em>
