@@ -22,3 +22,9 @@ export interface SkillListState {
   title: string;
   descList: { id: number; desc: string }[];
 }
+
+export interface CardState {
+  url: string;
+  title: string;
+  id: number;
+}
