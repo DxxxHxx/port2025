@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const handleButtonClick = (e: MouseEvent<HTMLAnchorElement>) => {
+  const handleButtonClick = (e: MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
     const id = e.currentTarget.textContent?.toLowerCase();
 
@@ -29,9 +29,9 @@ export default function Header() {
           <ul>
             {headerNav.map((item) => (
               <li key={item.id}>
-                <a onClick={handleButtonClick} href={`/#${item.title}`}>
+                <button onClick={handleButtonClick} key={item.id}>
                   {item.title}
-                </a>
+                </button>
               </li>
             ))}
           </ul>
