@@ -58,7 +58,10 @@ const Landing = () => {
           </motion.div>
         </div>
         <motion.div transition={{ delay: 0.2 }} className="hero-image ">
-          <div className="profile-image"></div>
+          <img
+            src="https://mblogthumb-phinf.pstatic.net/MjAyMDAyMTBfODAg/MDAxNTgxMzA0MTE3ODMy.ACRLtB9v5NH-I2qjWrwiXLb7TeUiG442cJmcdzVum7cg.eTLpNg_n0rAS5sWOsofRrvBy0qZk_QcWSfUiIagTfd8g.JPEG.lattepain/1581304118739.jpg?type=w800"
+            className="profile-image"
+          ></img>
         </motion.div>
       </motion.div>
     </section>
