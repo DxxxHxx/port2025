@@ -40,13 +40,70 @@ export const projectIntroList = {
     },
   ],
   contribute: [
-    { id: 1, title: "", desc: "", result: "" },
-    { id: 2, title: "", desc: "", result: "" },
+    {
+      id: 1,
+      title: "테스트 코드 도입",
+      desc: "RTL & Jest를 활용 해 단위 테스트 실행",
+      result: { number: "40%", text: "QA 비용 감소" },
+    },
+    {
+      id: 2,
+      title: "사용자 경험 최적화",
+      desc: "React-Query의 Optimistic update 통해 느린 네트워크 환경에서도 즉시 UI 업데이트",
+      result: { number: "99%", text: "UI 업데이트 시간 단축" },
+    },
   ],
-  review: [
-    { id: 1, title: "🎯 도전 과제", desc: "" },
-    { id: 2, title: "💡 해결 방안", desc: "" },
-    { id: 3, title: "📚 학습 경험", desc: "" },
+  reviews: [
+    {
+      id: 1,
+      review: [
+        {
+          id: 1,
+          title: "🎯 도전 과제",
+          desc: "프로젝트 규모 확장과 잦은 기능 수정으로 인해 QA 리포트가 급증",
+        },
+        {
+          id: 2,
+          title: "💡 해결 방안",
+          desc: "테스트 코드(RTL & Jest)를 도입해 주요 기능을 자동 검증, CI 환경에서 테스트 통과 여부를 병합 기준으로 설정",
+        },
+        {
+          id: 3,
+          title: "📚 학습 경험",
+          desc: "테스트 코드의 필요성, 작성법 학습, 도입 이전에 비해 QA비용 감소 경험",
+        },
+        {
+          id: 4,
+          title: "📌 추가 개선 가능성",
+          desc: "통합 테스트와 E2E테스트 경험 원함",
+        },
+      ],
+    },
+    {
+      id: 2,
+      review: [
+        {
+          id: 1,
+          title: "🎯 도전 과제",
+          desc: "Form 내부에 반복되는 UI와 로직이 많았지만 구조 상 재사용성이 낮았던 상황",
+        },
+        {
+          id: 2,
+          title: "💡 해결 방안",
+          desc: "로직과 뷰를 분리하는 Container & Presentational 패턴과 custom hook을 적용해 중복을 줄이고 재사용성을 높임",
+        },
+        {
+          id: 3,
+          title: "📚 학습 경험",
+          desc: "뷰와 로직의 분리를 통한 재사용성 향상, 복잡한 Form에 바로 적용해봄으로써 디자인 패턴에 대한 이해도 향상",
+        },
+        {
+          id: 4,
+          title: "📌 추가 개선 가능성",
+          desc: "상태 변화로 인한 불필요한 리렌더링을 줄이기 위한 성능 최적화",
+        },
+      ],
+    },
   ],
   references: [
     {
@@ -54,20 +111,31 @@ export const projectIntroList = {
       title:
         "[우아콘 2023] 프론트엔드 상태관리 실전 편 with React Query & Zustand",
       link: "https://velog.io/@hyeon9782/%EC%9A%B0%EC%95%84%EC%BD%98-2023-%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C-%EC%83%81%ED%83%9C%EA%B4%80%EB%A6%AC-%EC%8B%A4%EC%A0%84-%ED%8E%B8-with-React-Query-Zustand",
-      desc: "",
+      desc: "desc",
     },
     {
       id: 2,
       title: "SEO 톺아보기 – 정말 SSR이 SEO에 좋을까?",
       link: "https://tech.hancom.com/2024-07-26-ssr-seo/",
-      desc: "",
+      desc: "desc",
     },
     {
       id: 3,
       title: "테스트 코드를 왜 그리고 어떻게 작성해야 할까?",
       link: "https://tech.inflab.com/20230404-test-code/?ref=codenary#%EC%B2%AB%EB%B2%88%EC%A7%B8-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%BD%94%EB%93%9C%EB%8A%94-dry-%EB%B3%B4%EB%8B%A4%EB%8A%94-damp-%ED%95%98%EA%B2%8C-%EC%9E%91%EC%84%B1%ED%95%98%EB%9D%BC",
+      desc: "desc",
+    },
+    {
+      id: 4,
+      title: "Vite+React+typescript+yarn jest적용하기",
+      link: "https://velog.io/@leewoonhee/ViteReacttypescriptyarn-jest%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0",
       desc: "",
     },
-    { id: 4, title: "", link: "", desc: "" },
+    {
+      id: 5,
+      title: "디자인 패턴 소개",
+      link: "https://patterns-dev-kr.github.io/design-patterns/container-presentational-pattern/",
+      desc: "",
+    },
   ],
 };

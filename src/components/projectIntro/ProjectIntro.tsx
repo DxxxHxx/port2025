@@ -1,7 +1,7 @@
 import ProjectHeader from "./ProjectHeader";
 import ProjectDescription from "./ProjectDescription";
 import ProjectTech from "./ProjectTech";
-import ProjectContribute from "./ProjectContribute";
+import ProjectContribute from "./contribute/ProjectContribute";
 import ProjectReferences from "./ProjectReferences";
 import ProjectReview from "./ProjectReview";
 
