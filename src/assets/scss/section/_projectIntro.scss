@@ -177,9 +177,10 @@
     font-size: 16px;
     cursor: pointer;
     transition: all 0.2s;
+    outline: none;
   }
   .all-contribution:hover{
-    scale: 1.1;
+    scale: 1.05;
   }
   .contribution-item {
     background: #f8f9ff;
@@ -194,6 +195,7 @@
     font-size: 1.1rem;
     margin-bottom: 12px;
     color: #333;
+    font-weight: 700;
   }
   .achievement {
     margin-top: 16px;
@@ -216,7 +218,8 @@
   .review-item h5 {
     font-size: 1.1rem;
     margin-bottom: 8px;
-    color: #333;
+    color: #4361ee;
+    font-weight: 700;
   }
   .reference-list {
     list-style: none;
