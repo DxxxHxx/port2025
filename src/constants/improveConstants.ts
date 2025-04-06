@@ -1,32 +1,24 @@
-import optimisticUpdateThumbnail from "../assets/imgs/improve/optimistic-update/optimistic-thumbnaill.gif";
-import autoSearchtTumbnail from "../assets/imgs/improve/auto-search/search-fin.gif";
-import searchProblem from "../assets/imgs/improve/auto-search/problem.gif";
-import beforeDebounce from "../assets/imgs/improve/auto-search/before-debounce.gif";
-import afterDebounce from "../assets/imgs/improve/auto-search/after-debounce.gif";
-export const improveList = [
+import th from "../assets/imgs/project-intro/this-money-thumbnail.png";
+import autoSearchImg from "../assets/imgs/improve/auto-search.png";
+import optimisticUpdateImg from "../assets/imgs/improve/optimistic-update.png";
+import { CardState } from "../types/interface";
+export const improveList: CardState[] = [
   {
     id: 1,
     title: "검색 기능 키보드 이벤트 추가",
-    url: autoSearchtTumbnail,
-    pos: "",
+    src: autoSearchImg,
+    url: "https://planet-parrotfish-56e.notion.site/1b7b9afbb1e4814fb1c2f9b1f4fc805d",
   },
   {
     id: 2,
     title: "Optimistic update",
-    url: optimisticUpdateThumbnail,
-    pos: "",
+    src: optimisticUpdateImg,
+    url: "https://planet-parrotfish-56e.notion.site/Optimistic-update-1b7b9afbb1e4809b9473da962dbdc56e",
   },
-];
-
-export const improveDetailList = [
   {
-    id: 1,
-    title: "검색 기능 키보드 이벤트 추가",
-    src: {
-      searchProblem,
-      afterDebounce,
-      beforeDebounce,
-      autoSearchtTumbnail,
-    },
+    id: 3,
+    title: "useInfinityQuery를 활용 한 무한스크롤 ",
+    src: th,
+    url: "https://planet-parrotfish-56e.notion.site/useInfinityQuery-1b9b9afbb1e480198f7fed200763b8fd",
   },
 ];

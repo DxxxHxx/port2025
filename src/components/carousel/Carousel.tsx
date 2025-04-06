@@ -1,12 +1,6 @@
-import {
-  motion,
-  useTransform,
-  useScroll,
-  AnimatePresence,
-} from "framer-motion";
-import { Dispatch, SetStateAction, useRef, useState } from "react";
+import { motion, useTransform, useScroll } from "framer-motion";
+import { useRef } from "react";
 import { improveList } from "../../constants/improveConstants";
-import ImproveDetail from "../improve/detail/ImproveDetail";
 import { CardState } from "../../types/interface";
 
 const ImproveCarousel = () => {
@@ -22,7 +16,6 @@ const ImproveCarousel = () => {
 export default ImproveCarousel;
 
 export const HorizontalScrollCarousel = () => {
-  const [showId, setShowId] = useState<number | null>(null);
   const targetRef = useRef<HTMLDivElement | null>(null);
   const { scrollYProgress } = useScroll({
     target: targetRef,
@@ -35,35 +28,28 @@ export const HorizontalScrollCarousel = () => {
       <div className=" carousel__item__wrapper">
         <motion.div style={{ x }} className="carousel__card__wrapper">
           {improveList.map((card) => {
-            return <Card card={card} key={card.id} setShowId={setShowId} />;
+            return (
+              <a href={card.url} target="_blank">
+                <Card {...card} key={card.id} />
+              </a>
+            );
           })}
         </motion.div>
       </div>
-      <AnimatePresence>
-        {showId && (
-          <ImproveDetail closeDetail={() => setShowId(null)} showId={showId} />
-        )}
-      </AnimatePresence>
     </section>
   );
 };
 
-const Card = ({
-  card,
-  setShowId,
-}: { card: CardState } & {
-  setShowId: Dispatch<SetStateAction<number | null>>;
-}) => {
+const Card = (card: CardState) => {
   return (
     <motion.div
       whileHover={{ scale: 0.9 }}
       key={card.id}
       className="group card"
-      onClick={() => setShowId(card.id)}
     >
       <div
         style={{
-          backgroundImage: `url(${card.url})`,
+          backgroundImage: `url(${card.src})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",

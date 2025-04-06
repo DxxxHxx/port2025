@@ -27,4 +27,5 @@ export interface CardState {
   url: string;
   title: string;
   id: number;
+  src: string;
 }
