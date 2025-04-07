@@ -3,8 +3,8 @@ import Skill from "../components/Skill";
 import ContactContainer from "../components/contact/ContactContainer";
 import Profile from "../components/profile/Profile";
 import Landing from "../components/landing/Landing";
-import ImproveCarousel from "../components/carousel/Carousel";
 import ProjectIntro from "../components/projectIntro/ProjectIntro";
+import Challenge from "../components/challenge/Challenge";
 
 export default function Home() {
   return (
@@ -13,7 +13,7 @@ export default function Home() {
       <Profile />
       <Skill />
       <ProjectIntro />
-      <ImproveCarousel />
+      <Challenge />
       <ContactContainer />
     </Main>
   );

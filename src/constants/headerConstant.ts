@@ -13,7 +13,7 @@ export const headerNav = [
     id: 4,
   },
   {
-    title: "improve",
+    title: "challenge",
     id: 5,
   },
   {
