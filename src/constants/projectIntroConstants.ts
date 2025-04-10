@@ -111,19 +111,19 @@ export const projectIntroList = {
       title:
         "[우아콘 2023] 프론트엔드 상태관리 실전 편 with React Query & Zustand",
       link: "https://velog.io/@hyeon9782/%EC%9A%B0%EC%95%84%EC%BD%98-2023-%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C-%EC%83%81%ED%83%9C%EA%B4%80%EB%A6%AC-%EC%8B%A4%EC%A0%84-%ED%8E%B8-with-React-Query-Zustand",
-      desc: "desc",
+      desc: "",
     },
     {
       id: 2,
-      title: "SEO 톺아보기 – 정말 SSR이 SEO에 좋을까?",
-      link: "https://tech.hancom.com/2024-07-26-ssr-seo/",
-      desc: "desc",
+      title: "검색 기능 키보드 이동 이벤트",
+      link: "https://www.youtube.com/watch?v=o1XcuaCcsDA&t=281s",
+      desc: "",
     },
     {
       id: 3,
       title: "테스트 코드를 왜 그리고 어떻게 작성해야 할까?",
       link: "https://tech.inflab.com/20230404-test-code/?ref=codenary#%EC%B2%AB%EB%B2%88%EC%A7%B8-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%BD%94%EB%93%9C%EB%8A%94-dry-%EB%B3%B4%EB%8B%A4%EB%8A%94-damp-%ED%95%98%EA%B2%8C-%EC%9E%91%EC%84%B1%ED%95%98%EB%9D%BC",
-      desc: "desc",
+      desc: "",
     },
     {
       id: 4,

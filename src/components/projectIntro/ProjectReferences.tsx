@@ -11,7 +11,7 @@ export default function ProjectReferences() {
       whileInView="inView"
       className="project-section"
     >
-      <h4 className="section-subtitle">참고 레퍼런스</h4>
+      <h4 className="section-subtitle">주요 참고 레퍼런스</h4>
       <ul className="reference-list">
         {references.map((item) => (
           <motion.li variants={projectIntroVariants} key={item.id}>
