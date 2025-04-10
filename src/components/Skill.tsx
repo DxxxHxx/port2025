@@ -28,7 +28,7 @@ export default function Skill() {
               viewport={{ margin: "200px 0px 0px 0px", amount: 0.8 }}
               key={index}
             >
-              <span>{item.id}.</span>
+              <span className="skill__desc__number">{item.id}.</span>
               <h3>{item.title}</h3>
               <ul>
                 {item.descList.map(({ desc, id }) => (

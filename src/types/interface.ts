@@ -22,3 +22,20 @@ export interface SkillListState {
   title: string;
   descList: { id: number; desc: string }[];
 }
+
+export interface CardState {
+  url: string;
+  title: string;
+  id: number;
+  src: string;
+}
+
+export interface ChallengeCard {
+  id: number;
+  title: string;
+  description: string;
+  date: string;
+  link: string;
+}
+
+export type ActiveTabType = "troubleshooting" | "improvement";

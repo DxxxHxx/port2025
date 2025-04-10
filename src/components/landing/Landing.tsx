@@ -12,9 +12,8 @@ const variant = {
   },
 };
 const Landing = () => {
-  const handleNavigateContact = () => {
-    document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" });
-  };
+  const handleNavigate = (id: string) =>
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
   return (
     <section id="home" className="hero-container">
       <motion.div
@@ -44,14 +43,25 @@ const Landing = () => {
             작은 변화도 사용자에게 큰 영향을 줄 수 있다고 믿습니다.
           </motion.p>
           <motion.div variants={variant} className="cta-buttons">
-            <button className="primary-btn ">View My Work</button>
-            <button onClick={handleNavigateContact} className="secondary-btn ">
-              Contact Me
+            <button
+              className="primary-btn"
+              onClick={() => handleNavigate("project")}
+            >
+              Project
+            </button>
+            <button
+              onClick={() => handleNavigate("contact")}
+              className="secondary-btn "
+            >
+              Contact
             </button>
           </motion.div>
         </div>
         <motion.div transition={{ delay: 0.2 }} className="hero-image ">
-          <div className="profile-image"></div>
+          <img
+            src="https://mblogthumb-phinf.pstatic.net/MjAyMDAyMTBfODAg/MDAxNTgxMzA0MTE3ODMy.ACRLtB9v5NH-I2qjWrwiXLb7TeUiG442cJmcdzVum7cg.eTLpNg_n0rAS5sWOsofRrvBy0qZk_QcWSfUiIagTfd8g.JPEG.lattepain/1581304118739.jpg?type=w800"
+            className="profile-image"
+          ></img>
         </motion.div>
       </motion.div>
     </section>

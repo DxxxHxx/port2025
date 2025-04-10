@@ -3,7 +3,8 @@ import Skill from "../components/Skill";
 import ContactContainer from "../components/contact/ContactContainer";
 import Profile from "../components/profile/Profile";
 import Landing from "../components/landing/Landing";
-import ImproveListContainer from "../components/improve/list/ImproveListContainer";
+import ProjectIntro from "../components/projectIntro/ProjectIntro";
+import Challenge from "../components/challenge/Challenge";
 
 export default function Home() {
   return (
@@ -11,7 +12,8 @@ export default function Home() {
       <Landing />
       <Profile />
       <Skill />
-      <ImproveListContainer />
+      <ProjectIntro />
+      <Challenge />
       <ContactContainer />
     </Main>
   );
