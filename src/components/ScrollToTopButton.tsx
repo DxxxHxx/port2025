@@ -6,6 +6,7 @@ export default function ScrollToTopButton() {
   const [visible, setVisible] = useState(false);
   useEffect(() => {
     const $project = document.querySelector("#project");
+    if (!$project) return;
     const observer = new IntersectionObserver(([entry]) => {
       if (entry.isIntersecting) {
         setVisible(true);
