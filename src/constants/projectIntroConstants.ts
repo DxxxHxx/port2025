@@ -75,7 +75,7 @@ export const projectIntroList = {
         {
           id: 4,
           title: "📌 추가 개선 가능성",
-          desc: "통합 테스트와 E2E테스트 경험 원함",
+          desc: "통합 테스트 및 E2E 테스트 도입 경험 쌓기, 테스트 시나리오 설계 역량 강화",
         },
       ],
     },

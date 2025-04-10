@@ -1,12 +1,8 @@
-import { AnimatePresence, motion } from "framer-motion";
-import { ChevronRight } from "lucide-react";
-import { useState } from "react";
+import { motion } from "framer-motion";
 import { projectIntroList } from "../../../constants/projectIntroConstants";
 import { projectIntroVariants } from "../../../constants/animationVariants";
-import ProjectContributeDetaill from "./ProjectContributeDetaill";
 
 export default function ProjectContribute() {
-  const [showDetail, setShowDetail] = useState<boolean | null>(false);
   const { contribute } = projectIntroList;
   return (
     <>
@@ -25,18 +21,7 @@ export default function ProjectContribute() {
             <ProjectContributeItem {...item} key={item.id} />
           ))}
         </motion.div>
-        <button
-          onClick={() => setShowDetail(true)}
-          className="all-contribution"
-        >
-          추가 기여 사항 <ChevronRight />
-        </button>
       </motion.div>
-      <AnimatePresence>
-        {showDetail && (
-          <ProjectContributeDetaill closeDetail={() => setShowDetail(null)} />
-        )}
-      </AnimatePresence>
     </>
   );
 }

@@ -3,53 +3,56 @@ import { ChallengeCard } from "../types/interface";
 export const troubleshootingList: ChallengeCard[] = [
   {
     id: 1,
-    title: "API 응답 지연 최적화",
+    title: "URL 파라미터로 필터링,페이지 상태 유지하기",
     description:
-      "API 응답 시간을 3초에서 800ms로 개선하여 사용자 경험을 향상시킨 문제 해결 과정",
-    date: "2024.01.15",
+      "페이지네이션, 필터링 조건 등 리스트 상태를 query string으로 유지하는 과정에서 발생한 문제를 해결한 과정입니다.",
+    date: "2025.04.06",
 
-    link: "https://your-blog.com/api-optimization",
+    link: "https://planet-parrotfish-56e.notion.site/URL-1d1b9afbb1e4806aabbde5a41761eee2?pvs=73",
   },
   {
     id: 2,
-    title: "크로스 브라우저 호환성 이슈",
+    title: "모바일 드래그 불가 이슈 해결",
     description:
-      "Safari에서 발생한 CSS Grid 레이아웃 문제를 해결하여 크로스 브라우저 호환성 확보",
-    date: "2024.01.10",
+      "모바일 환경으로 로컬호스트 접속, 디버깅을 통해 특정 컴포넌트의 드래그 이벤트가 동작하지 않는 문제를 해결한 과정입니다.",
+    date: "2025.02.27",
 
-    link: "https://your-blog.com/cross-browser-compatibility",
+    link: "https://planet-parrotfish-56e.notion.site/1d1b9afbb1e4801c926fcca94b5fd32f?pvs=73",
   },
   {
     id: 3,
-    title: "메모리 누수 해결",
+    title: "디자인 패턴 도입을 통한 재사용성 문제 해결",
     description:
-      "React 애플리케이션의 메모리 누수 문제를 해결하여 성능을 30% 개선한 사례",
-    date: "2024.01.05",
+      "반복되는 UI와 로직을 Container & Presentational 패턴을 활용해 재사용성을 높였습니다.",
+    date: "2024.02.22",
 
-    link: "https://your-blog.com/memory-leak-fix",
+    link: "https://planet-parrotfish-56e.notion.site/1d1b9afbb1e4807ea010c805d853e11f?pvs=73",
   },
 ];
 
 export const improvementList: ChallengeCard[] = [
   {
     id: 1,
-    title: "검색 자동완성",
-    description: "solve with custom hook",
-    date: "2025-04-01",
-    link: "",
+    title: "검색기능 키보드 이벤트 추가",
+    description:
+      "검색 자동완성 기능에 키보드로 리스트를 이동하거나 선택할 수 있도록 하여 UX를 개선했습니다.",
+    date: "2025-02-22",
+    link: "https://planet-parrotfish-56e.notion.site/1b7b9afbb1e4814fb1c2f9b1f4fc805d?pvs=74",
   },
   {
     id: 2,
-    title: "optimistic update",
-    description: "solve with custom hook",
-    date: "2025-04-05",
-    link: "",
+    title: "Optimistic Updates 적용",
+    description:
+      "서버 성능 저하로 응답이 지연됐던 상황에서 UI를 즉시 업데이트 되도록 하여 UX를 개선했습니다.",
+    date: "2025-01-31",
+    link: "https://planet-parrotfish-56e.notion.site/Optimistic-update-1b7b9afbb1e4809b9473da962dbdc56e?pvs=74",
   },
   {
     id: 3,
-    title: "infinite scroll",
-    description: "solve with custom hook",
-    date: "2025-04-10",
-    link: "",
+    title: "React Query 기반 무한스크롤 구현",
+    description:
+      "React Query의 useInfiniteQuery를 활용해 네트워크 요청과 상태 관리를 최적화한 무한스크롤을 구현했습니다.",
+    date: "2024-12-06",
+    link: "https://planet-parrotfish-56e.notion.site/useInfinityQuery-1b9b9afbb1e480198f7fed200763b8fd?pvs=74",
   },
 ];
