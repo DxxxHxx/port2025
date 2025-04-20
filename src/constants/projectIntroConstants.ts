@@ -43,7 +43,7 @@ export const projectIntroList = {
     {
       id: 1,
       title: "테스트 코드 도입",
-      desc: "RTL & Jest를 활용 해 단위 테스트 실행",
+      desc: "RTL & Vitest를 활용 해 단위 테스트 실행",
       result: { number: "40%", text: "QA 비용 감소" },
     },
     {
@@ -65,7 +65,7 @@ export const projectIntroList = {
         {
           id: 2,
           title: "💡 해결 방안",
-          desc: "테스트 코드(RTL & Jest)를 도입해 주요 기능을 자동 검증, CI 환경에서 테스트 통과 여부를 병합 기준으로 설정",
+          desc: "테스트 코드(RTL & Vitest)를 도입해 주요 기능을 자동 검증, CI 환경에서 테스트 통과 여부를 병합 기준으로 설정",
         },
         {
           id: 3,
@@ -127,8 +127,8 @@ export const projectIntroList = {
     },
     {
       id: 4,
-      title: "Vite+React+typescript+yarn jest적용하기",
-      link: "https://velog.io/@leewoonhee/ViteReacttypescriptyarn-jest%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0",
+      title: "Vite+React+typescript+yarn Vitest적용하기",
+      link: "https://velog.io/@leewoonhee/ViteReacttypescriptyarn-Vitest%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0",
       desc: "",
     },
     {

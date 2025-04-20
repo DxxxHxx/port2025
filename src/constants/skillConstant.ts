@@ -16,7 +16,7 @@ export const skillList: SkillListState[] = [
       },
       {
         id: 4,
-        desc: "Jest & React Testing Library를 활용 해 간단한 단위 테스트, 통합 테스트 경험을 보유하고 있습니다.",
+        desc: "Vitest & React Testing Library를 활용 해 간단한 단위 테스트, 통합 테스트 경험을 보유하고 있습니다.",
       },
     ],
   },

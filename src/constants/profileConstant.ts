@@ -24,7 +24,7 @@ iOS Safari, Chrome에서의 크로스브라우징 이슈를 해결하여 다양�
 [ 신뢰할 수 있는 코드와 자동화된 테스트 ] 
 <div style="margin:10px" ></div>
 코드의 안정성과 유지보수성을 중요하게 생각합니다. 
-Jest와 React Testing Library를 활용한 기본적인 <span style="color:blue">단위 테스트 및 통합 테스트를 경험</span>했으며, 이를 통해 <span style="color:blue">배포 후 발견되는 버그가 40% 감소</span>하는 성과를 얻었습니다. 
+Vitest와 React Testing Library를 활용한 기본적인 <span style="color:blue">단위 테스트 및 통합 테스트를 경험</span>했으며, 이를 통해 <span style="color:blue">배포 후 발견되는 버그가 40% 감소</span>하는 성과를 얻었습니다. 
 또한, <span style="color:blue">GitHub Actions를 활용해 테스트 자동화</span>를 위한 CI/CD 파이프라인을 구축하여 개발 효율성을 향상시켰습니다. 
 아직 테스트 및 배포 자동화 경험이 많지는 않지만, 실제 서비스에 효과적으로 적용할 수 있도록 지속적으로 성장하고 있습니다.`,
 };
