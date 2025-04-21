@@ -4,10 +4,10 @@ export const projectIntroList = {
   title: "이게머니 (this money)",
   period: "2024.11.03 ~ 진행 중 (6개월)",
   member: "디자이너 2명, 프론트엔드 1명, 백엔드 1명",
-  role: "프론트엔드",
+  role: "프론트엔드 팀원",
   links: {
     serviceLink: "https://thisismoney.site/",
-    githubLink: "https://github.com/one-dream-us/front-end",
+    githubLink: "https://github.com/DxxxHxx/This_is_money/blob/main/README.md",
   },
   desc: "이게머니는 2030 초보 투자자들이 경제 신문을 쉽게 읽어볼 수 있도록, 최신 경제 뉴스로 경제 용어를 학습하는 서비스입니다. 주요 기능은 다음과 같습니다:",
   mainFeatures: [
@@ -43,7 +43,7 @@ export const projectIntroList = {
     {
       id: 1,
       title: "테스트 코드 도입",
-      desc: "RTL & Jest를 활용 해 단위 테스트 실행",
+      desc: "RTL & Vitest를 활용 해 단위 테스트 실행",
       result: { number: "40%", text: "QA 비용 감소" },
     },
     {
@@ -65,7 +65,7 @@ export const projectIntroList = {
         {
           id: 2,
           title: "💡 해결 방안",
-          desc: "테스트 코드(RTL & Jest)를 도입해 주요 기능을 자동 검증, CI 환경에서 테스트 통과 여부를 병합 기준으로 설정",
+          desc: "테스트 코드(RTL & Vitest)를 도입해 주요 기능을 자동 검증, CI 환경에서 테스트 통과 여부를 병합 기준으로 설정",
         },
         {
           id: 3,
@@ -127,8 +127,8 @@ export const projectIntroList = {
     },
     {
       id: 4,
-      title: "Vite+React+typescript+yarn jest적용하기",
-      link: "https://velog.io/@leewoonhee/ViteReacttypescriptyarn-jest%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0",
+      title: "Vite+React+typescript+yarn Vitest적용하기",
+      link: "https://velog.io/@leewoonhee/ViteReacttypescriptyarn-Vitest%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0",
       desc: "",
     },
     {
