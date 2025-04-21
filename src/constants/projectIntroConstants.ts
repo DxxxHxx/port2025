@@ -4,10 +4,10 @@ export const projectIntroList = {
   title: "이게머니 (this money)",
   period: "2024.11.03 ~ 진행 중 (6개월)",
   member: "디자이너 2명, 프론트엔드 1명, 백엔드 1명",
-  role: "프론트엔드",
+  role: "프론트엔드 팀원",
   links: {
     serviceLink: "https://thisismoney.site/",
-    githubLink: "https://github.com/one-dream-us/front-end",
+    githubLink: "https://github.com/DxxxHxx/This_is_money/blob/main/README.md",
   },
   desc: "이게머니는 2030 초보 투자자들이 경제 신문을 쉽게 읽어볼 수 있도록, 최신 경제 뉴스로 경제 용어를 학습하는 서비스입니다. 주요 기능은 다음과 같습니다:",
   mainFeatures: [
