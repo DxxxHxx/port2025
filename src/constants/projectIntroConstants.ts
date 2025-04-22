@@ -3,7 +3,7 @@ export const projectIntroList = {
   thumbnail,
   title: "이게머니 (this money)",
   period: "2024.11.03 ~ 진행 중 (6개월)",
-  member: "디자이너 2명, 프론트엔드 1명, 백엔드 1명",
+  member: "디자이너 2명, 프론트엔드 2명, 백엔드 1명",
   role: "프론트엔드 팀원",
   links: {
     serviceLink: "https://thisismoney.site/",
