@@ -1,11 +1,11 @@
-import { projectIntroList } from "../../constants/projectIntroConstants";
 import { motion } from "framer-motion";
 import { GithubIcon, House } from "lucide-react";
 import { projectIntroVariants } from "../../constants/animationVariants";
-import projectThumbnail from "../../assets/imgs/project-intro/this-money-thumbnail.png";
+import { ProjectInfo } from "../../types/interface";
 
-export default function ProjectHeader() {
-  const { title, period, member, role, links } = projectIntroList;
+export default function ProjectHeader(props: ProjectInfo) {
+  const { title, period, member, role, links, thumbnail } = props;
+
   return (
     <motion.div
       variants={projectIntroVariants}
@@ -14,7 +14,7 @@ export default function ProjectHeader() {
       className="project-header"
     >
       <div className="project-image">
-        <img src={projectThumbnail} alt="Project Screenshot" />
+        <img src={thumbnail} alt="Project Screenshot" />
       </div>
       <div className="project-overview">
         <h3 className="project-title">{title}</h3>

@@ -28,6 +28,14 @@ export const troubleshootingList: ChallengeCard[] = [
 
     link: "https://planet-parrotfish-56e.notion.site/1d1b9afbb1e4807ea010c805d853e11f?pvs=73",
   },
+  {
+    id: 4,
+    title: "SPA에서 쿼리 파라미터 기반 페이지네이션 히스토리 관리",
+    description:
+      "브라우저의 뒤로가기 버튼을 눌렀을 때 페이지 -1이 아닌 이전 라우트로 이동하는 이슈를 해결했습니다.",
+    date: "2025.06.07",
+    link: "https://planet-parrotfish-56e.notion.site/SPA-1b7b9afbb1e481ca8a54e3322ae01a66?pvs=73",
+  },
 ];
 
 export const improvementList: ChallengeCard[] = [
@@ -36,7 +44,7 @@ export const improvementList: ChallengeCard[] = [
     title: "검색기능 키보드 이벤트 추가",
     description:
       "검색 자동완성 기능에 키보드로 리스트를 이동하거나 선택할 수 있도록 하여 UX를 개선했습니다.",
-    date: "2025-02-22",
+    date: "2025.02.22",
     link: "https://planet-parrotfish-56e.notion.site/1b7b9afbb1e4814fb1c2f9b1f4fc805d?pvs=74",
   },
   {
@@ -44,7 +52,7 @@ export const improvementList: ChallengeCard[] = [
     title: "Optimistic Updates 적용",
     description:
       "서버 성능 저하로 응답이 지연됐던 상황에서 UI를 즉시 업데이트 되도록 하여 UX를 개선했습니다.",
-    date: "2025-01-31",
+    date: "2025.01.31",
     link: "https://planet-parrotfish-56e.notion.site/Optimistic-update-1b7b9afbb1e4809b9473da962dbdc56e?pvs=74",
   },
   {
@@ -52,7 +60,16 @@ export const improvementList: ChallengeCard[] = [
     title: "React Query 기반 무한스크롤 구현",
     description:
       "React Query의 useInfiniteQuery를 활용해 네트워크 요청과 상태 관리를 최적화한 무한스크롤을 구현했습니다.",
-    date: "2024-12-06",
+    date: "2024.12.06",
     link: "https://planet-parrotfish-56e.notion.site/useInfinityQuery-1b9b9afbb1e480198f7fed200763b8fd?pvs=74",
+  },
+  {
+    id: 4,
+    title: "모달 컴포넌트 포커스 트랩을 통해 접근성 개선",
+    description:
+      "포커스 트랩을 통해 모달 외부로 포커스가 이동하지 않도록 제한 해 웹 접근성을 개선했습니다.",
+    date: "2025.06.07",
+
+    link: "https://planet-parrotfish-56e.notion.site/20bb9afbb1e4804c8c50daf41e83ddfd?pvs=73",
   },
 ];

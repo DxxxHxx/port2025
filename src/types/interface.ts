@@ -39,3 +39,52 @@ export interface ChallengeCard {
 }
 
 export type ActiveTabType = "troubleshooting" | "improvement";
+
+export interface ProjectInfo {
+  thumbnail: string;
+  title: string;
+  period: string;
+  member: string;
+  role: string;
+  links: {
+    serviceLink: string;
+    githubLink: string;
+  };
+  desc: string;
+  mainFeatures: {
+    id: number;
+    feat: string;
+  }[];
+  techReason: {
+    id: number;
+    tech: string;
+    reason: string;
+  }[];
+  contribute: {
+    id: number;
+    title: string;
+    desc: string;
+    result: {
+      number: string;
+      text: string;
+    };
+  }[];
+  reviews: {
+    id: number;
+    review: Reivew[];
+  }[];
+  references: References[];
+}
+
+interface References {
+  id: number;
+  title: string;
+  link: string;
+  desc: string;
+}
+
+interface Reivew {
+  id: number;
+  title: string;
+  desc: string;
+}

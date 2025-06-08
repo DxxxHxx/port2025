@@ -1,9 +1,9 @@
-import { projectIntroList } from "../../constants/projectIntroConstants";
 import { motion } from "framer-motion";
 import { projectIntroVariants } from "../../constants/animationVariants";
+import { ProjectInfo } from "../../types/interface";
 
-export default function ProjectTech() {
-  const { techReason } = projectIntroList;
+export default function ProjectTech(props: ProjectInfo) {
+  const { techReason } = props;
   return (
     <motion.div
       variants={projectIntroVariants}
