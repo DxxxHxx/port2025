@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import { projectIntroVariants } from "../../constants/animationVariants";
-import { projectIntroList } from "../../constants/projectIntroConstants";
+import { ProjectInfo } from "../../types/interface";
 
-export default function ProjectReferences() {
-  const { references } = projectIntroList;
+export default function ProjectReferences(props: ProjectInfo) {
+  const { references } = props;
   return (
     <motion.div
       variants={projectIntroVariants}

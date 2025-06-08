@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
-import { projectIntroList } from "../../../constants/projectIntroConstants";
 import { projectIntroVariants } from "../../../constants/animationVariants";
+import { ProjectInfo } from "../../../types/interface";
 
-export default function ProjectContribute() {
-  const { contribute } = projectIntroList;
+export default function ProjectContribute(props: ProjectInfo) {
+  const { contribute } = props;
   return (
     <>
       <motion.div
